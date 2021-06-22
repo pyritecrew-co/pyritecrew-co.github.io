@@ -5,11 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main Page URL Preview -->
     <title>Pyritecrew.co</title>
     <meta name="desription" content="We make mobile apps and UI/UX designs professionally, utilizing cutting edge
         technologies for affordable price." />
-    <link rel="canonical" href="pyritecrew.co" />
+    <link rel="canonical" href="https://pyritecrew.co/index.html" />
 
+    <!-- Facebook URL Preview -->
+    <meta property="og:url" content="https://pyritecrew.co/index.html" />
+    <meta property="og:type" content="landing page" />
+    <meta property="og:title" content="Pyritecrew.co" />
+    <meta property="og:description" content="We make mobile apps and UI/UX designs professionally, utilizing cutting edge
+    technologies for affordable price." />
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/pyritecrew-co/pyritecrew-co.github.io/main/img/display-1.png" />
+
+    
+    <!-- Dependencies -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
@@ -30,11 +42,13 @@
 
 <!-- Style starts here -->
 <style>
-    input, textarea{
+    input,
+    textarea {
         border-color: #dc354500 !important;
         background-color: hsl(204, 10%, 19%) !important;
     }
-    .form-control:focus{
+
+    .form-control:focus {
         border-color: #dc3545;
         box-shadow: 0 0 0 0.2rem #dc354570;
 
@@ -117,7 +131,7 @@
             </div>
         </div>
     </div><br><br><br><br><br>
-    
+
     <!-- About Us Area -->
     <br id="about-us"><br><br>
     <div class="container">
@@ -133,7 +147,7 @@
         </p>
 
     </div> <br><br><br><br><br><br><br>
-    
+
     <!-- Meet Our Team Area -->
     <br id="team"><br><br>
     <div class="container">
@@ -148,7 +162,7 @@
         </ul>
 
     </div> <br> <br><br><br><br><br>
-    
+
     <!-- Our Projects Area -->
     <br id="our-projects"><br><br>
     <div class="container">
@@ -160,8 +174,8 @@
                     App</a></li>
         </ul>
     </div><br> <br><br><br><br><br>
-    
-    
+
+
     <!-- Contact Us Area -->
     <br id="contact-us"><br><br>
     <div class="container">
@@ -192,50 +206,80 @@
                 </ul>
 
             </div>
-            <div class="container col distracted">
+
+            <!-- FORM SHEET  -->
+            <form name="pyritecrew-subscriber" class="container col distracted" action="https://formspree.io/f/xwkabjgp"
+                method="POST" id="main-form">
+
+                <!-- Entity -->
                 <div class="mb-3">
-                    <label for="FormControlInput1" class="form-label lead">Entity</label>
-                    <input type="email" class="form-control text-white border-0" id="FormControlInput1"
-                        placeholder="Company, Organization, name">
+                    <label class="form-label lead" for="entity-text-field">Entity</label>
+                    <input id="entity-text-field" class="form-control text-white border-0" type="text" name="name"
+                        placeholder="Company, Organization, name" required>
                 </div>
 
+                <!-- Email -->
                 <div class="mb-3">
-                    <label for="FormControlInput2" class="form-label lead">Email</label>
-                    <input type="email" class="form-control text-white" id="FormControlInput2"
-                        placeholder="jhondoe@gmail.com">
+                    <label class="form-label lead" for="email-text-field">Email</label>
+                    <input id="email-text-field" class="form-control text-white" type="email" name="_replyto"
+                        placeholder="jhondoe@gmail.com" required>
                 </div>
+
+                <!-- Message -->
                 <div class="mb-3">
-                    <label for="FormControlTextarea1" class="form-label lead">Message</label>
-                    <textarea class="form-control text-white" id="FormControlTextarea1" rows="3"
-                        placeholder="Message..."></textarea>
+                    <label class="form-label lead" for="message-text-area">Message</label>
+                    <textarea id="message-text-area" class="form-control text-white" name="message" rows="5"
+                        placeholder="Message..." required></textarea>
                 </div>
+
+                <!-- Subject hidden -->
+                <input type="hidden" name="_subject" value="Pyritecrew Subscriber">
                 <br>
-                <button class="btn btn-danger btn-sm" onclick="document.getElementById('contact-us')">SUBMIT
-                    NOW</button>
-            </div>
+
+                <!-- Submit button -->
+                <button class="btn btn-danger btn-sm" type="submit" form="main-form">SUBMIT NOW</button>
+            </form>
 
         </div>
         <br><br>
-        <div class="distracted-two">
+
+        <!-- MOBILE FORM SHEET -->
+        <form name="pyritecrew-subscriber" class="container col distracted-two" action="https://formspree.io/f/xwkabjgp"
+            method="POST" id="mobile-form">
+
+            <!-- Entity -->
             <div class="mb-3">
-                <label for="FormControlInput1" class="form-label lead">Name</label>
-                <input type="email" class="form-control text-white" id="FormControlInput1" placeholder="Company, Organization, name">
+                <label class="form-label lead" for="entity-text-field">Entity</label>
+                <input id="entity-text-field" class="form-control text-white border-0" type="text" name="name"
+                    placeholder="Company, Organization, name" required>
             </div>
 
+            <!-- Email -->
             <div class="mb-3">
-                <label for="FormControlInput2" class="form-label lead">Email</label>
-                <input type="email" class="form-control text-white" id="FormControlInput2" placeholder="jhondoe@gmail.com">
+                <label class="form-label lead" for="email-text-field">Email</label>
+                <input id="email-text-field" class="form-control text-white" type="email" name="_replyto"
+                    placeholder="jhondoe@gmail.com" required>
             </div>
+
+            <!-- Message -->
             <div class="mb-3">
-                <label for="FormControlTextarea1 lead" class="form-label lead">Message</label>
-                <textarea class="form-control text-white" id="FormControlTextarea1" rows="3" placeholder="Message..."></textarea>
+                <label class="form-label lead" for="message-text-area">Message</label>
+                <textarea id="message-text-area" class="form-control text-white" name="message" rows="5"
+                    placeholder="Message..." required></textarea>
             </div>
-            <br><br>
-            <button class="btn btn-danger btn-sm" onclick="document.getElementById('contact-us')">SUBMIT
-                NOW</button>
-        </div>
+
+            <!-- Subject hidden -->
+            <input type="hidden" name="_subject" value="Pyritecrew Subscriber">
+            <br>
+
+            <!-- Submit button -->
+            <button class="btn btn-danger btn-sm" type="submit" form="mobile-form">SUBMIT NOW</button>
+        </form>
+
+
     </div><br><br><br>
 
 
 </body>
-</html> 
+
+</html>
